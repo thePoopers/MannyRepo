@@ -1,4 +1,4 @@
-# MannyRepo
+<h1>Server Side</h1>
 Must edit DocumentRoot:
 	- Edit /apache2/sites-enabled/000-default.conf
 	- Change DocumentRoot to your www/html directory
@@ -19,7 +19,6 @@ Configure conf.inc.php to connect to MYSQLDB
 
 
 <h1>Android Side</h1>
-For Android:
 
 Change the server location to your ipaddress on the following files:
 AddComment.java
