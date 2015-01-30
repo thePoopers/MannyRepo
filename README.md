@@ -2,9 +2,9 @@
 Copy the webservice folder and stick it into the /www-root folder in your computer or w/e the folder is that is default in your LAMP/XAMPP/WAMP/MAMP stack.
 
 <h1>1.</h1>
-Must edit DocumentRoot field which is found inside of the 000-default.conf (sometimes called default.conf). Change the directory of DocumentRoot to the appropriate directory your web files are hosted.
+Must edit DocumentRoot field which is found inside of the 000-default.conf (sometimes called default.conf). You probably have to google something like 'default.conf file location for YOUR-OS-HERE'. Change the directory of DocumentRoot to the appropriate directory your web files are hosted.
 
-Ex: For me it was:
+Ex: For me (Ubuntu 14.10) it was:
 	- /apache2/sites-enabled/000-default.conf
 	- Changed DocumentRoot to my ~/Coding/Servers/www/webservice directory
 	- Save
@@ -41,3 +41,6 @@ AddComment.java
 Login.java
 ReadComments.java
 Register.java
+
+
+If you got this far, you're ready to contribute code to the project. holla at ya boy
