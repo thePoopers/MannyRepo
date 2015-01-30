@@ -4,8 +4,8 @@
 	$host = "localhost"; 
 	// Make sure to manually create this on phpMyAdmin
 	$dbname = "bookit_webserver";     
-	$username = "YOUR_MYSQLDB_USERNAME_MINE_WAS_root"; 
-    $password = "YOUR_MYSQLDB_PASS_HERE"; 
+	$username = "root"; 
+    $password = "Manny!23"; 
     
     
 
