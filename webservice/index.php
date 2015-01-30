@@ -1,3 +1,3 @@
 <?php
-echo "Testing, this should be visible at http://www.theartistandtheengineer.co/webservice/";
+echo "This is your index.php file";
 ?>
