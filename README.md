@@ -6,11 +6,11 @@ Must edit DocumentRoot:
 
 Edit /etc/apache2/apache2.conf and add the following:
 
-#<Directory ~/Coding/Server/www/webservice>
+>Directory ~/Coding/Server/www/webservice>
     Options Indexes FollowSymLinks
     AllowOverride None
     Require all granted
-#</Directory>
+>/Directory>
 
 
 Reload Apache
