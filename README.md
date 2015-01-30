@@ -1,7 +1,9 @@
 <h1>Server Side</h1>
-Copy the webservice folder and stick it into the /www-root folder in your computer or w/e the folder is that is default in your LAMP/XAMPP/WAMP/MAMP stack.
+Change Apache port to 80, mysql port to 3306.
+Copy the webservice folder and stick it into the (for mac it's) /Applications/MAMP/htdocs in your computer or w/e the folder is that is default in your LAMP/XAMPP/WAMP/MAMP stack.
 
 <h1>1.</h1>
+This step you might not have to do, might be only for linux...
 Must edit DocumentRoot field which is found inside of the 000-default.conf (sometimes called default.conf). You probably have to google something like 'default.conf file location for YOUR-OS-HERE'. Change the directory of DocumentRoot to the appropriate directory your web files are hosted.
 
 Ex: For me (Ubuntu 14.10) it was:
