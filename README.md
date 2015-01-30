@@ -31,6 +31,9 @@ The fields you probably need to change are:
 password</b>
 These are the username/password of your mysqldb.<br>
 
+<h1>5.</h1>
+Start your server and visit http://localhost/lohin.php and play around with the different files inside of the webservice folder. If everything is updating, posting, etc then you're server is good to go and you're ready to configure your Android side.
+
 
 <h1>Android Side</h1>
 Save the MySQLTest folder to your computer and import it into android studio.
@@ -42,5 +45,11 @@ Login.java
 ReadComments.java
 Register.java
 
+<h1>2.</h1>
+Load up your emulator. If you use your phone, make sure it's on the same network as your server.
+<h1>3</h1>
+Compile, Run, and test the app.
 
-If you got this far, you're ready to contribute code to the project. holla at ya boy
+
+
+<h1>If you got this far, you're ready to contribute code to the project. holla at ya boy</h1>
