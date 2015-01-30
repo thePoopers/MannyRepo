@@ -6,7 +6,7 @@ Must edit DocumentRoot:
 
 Edit /etc/apache2/apache2.conf and add the following:
 
-<Directory /home/vg/www>
+<Directory ~/Coding/Server/www/webservice>
     Options Indexes FollowSymLinks
     AllowOverride None
     Require all granted
