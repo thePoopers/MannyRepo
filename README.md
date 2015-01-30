@@ -1,4 +1,5 @@
 <h1>Server Side</h1>
+Copy the webservice folder and stick it into the /www-root folder in your computer or w/e the folder is that is default in your LAMP/XAMPP/WAMP/MAMP stack.
 
 <h1>1.</h1>
 Must edit DocumentRoot field which is found inside of the 000-default.conf (sometimes called default.conf). Change the directory of DocumentRoot to the appropriate directory your web files are hosted.
@@ -32,7 +33,9 @@ These are the username/password of your mysqldb.<br>
 
 
 <h1>Android Side</h1>
+Save the MySQLTest folder to your computer and import it into android studio.
 
+<h1>1.</h1>
 Change the server location to your servers ipaddress (Ex: http://192.168.1.4/login.php) on the following files
 AddComment.java
 Login.java
