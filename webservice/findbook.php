@@ -21,16 +21,30 @@ if (!empty($_POST)){
 
 	header('Content-Type: application/json');
 
+	//take input from textbox
 	$contents = $_POST["contents"];
+	//store json output from isbndb into output var
+	$output = file_get_contents('http://isbndb.com/api/v2/json/Q0DGGAQJ/books?q='.urlencode($contents).'');
+	//decode json into an object to make some logic out of results
+	$objJson = json_decode($output);
 
-	$response["success"] = 1;
-	$response["message"] = "Successfully searched!";
+	//if there are any results
+	if($objJson->result_count > 0){
+		$response["success"] = 1;
+		$response["message"] = "Successfully searched!";
+		$response["begin"] = $output;
+		//echo $output;
+		echo json_encode($response);
+	}
+	//else no results
+	else{
+		$response["success"] = 1;
+		$response["message"] = "No Results Found";
+		echo json_encode($response);
+	}
 
-	$response["results"] = file_get_contents('http://isbndb.com/api/v2/json/Q0DGGAQJ/books?q='.urlencode($contents).'');
-
-	echo json_encode($response);
-
-	}else{
+	}
+	else{
 ?>
 <!--Take the user input and store it into a session variable that gets sent to search.php-->
 		<h1>Find Book</h1> 

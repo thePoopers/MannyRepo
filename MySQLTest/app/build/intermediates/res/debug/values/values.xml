@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Applications/MAMP/htdocs/MannyRepo/MySQLTest/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/mpcen-desktop/Coding/Servers/www/MySQLTest/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">BookIt.co</string>
     <string name="password_textview">Password:</string>
@@ -9,7 +9,7 @@
     <string name="read_comments_title">Recent Comments</string>
     <string name="submit">Submit</string>
     <string name="username_textview">Username:</string>
-    <!-- From: file:/Applications/MAMP/htdocs/MannyRepo/MySQLTest/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/mpcen-desktop/Coding/Servers/www/MySQLTest/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

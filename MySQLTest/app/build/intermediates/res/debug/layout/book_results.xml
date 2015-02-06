@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <!-- User Name Label -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Book Name, Author, or ISBN"
+        android:padding="10dip"
+        android:textColor="#33B5E5" />
+
+    <!--  User Name Text Field -->
+    <EditText
+        android:id="@+id/searchField"
+        android:hint="Please Enter a title, author, or ISBN"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <!--  Text View to display the returned age or a error message -->
+    <TextView   android:id="@+id/Results"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:textColor="#99CC00"
+        android:padding="10dip"
+        android:textStyle="bold"/>
+
+    <!-- Button to fire the getAge Method-->
+    <Button
+        android:id="@+id/GetBooks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Find Book" />
+
+
+</LinearLayout><!-- From: file:/home/mpcen-desktop/Coding/Servers/www/MySQLTest/app/src/main/res/layout/book_results.xml -->
