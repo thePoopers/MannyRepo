@@ -25,11 +25,12 @@ if (!empty($_POST)){
 
 	$response["success"] = 1;
 	$response["message"] = "Successfully searched!";
+
+	$response["results"] = file_get_contents('http://isbndb.com/api/v2/json/Q0DGGAQJ/books?q='.urlencode($contents).'');
+
 	echo json_encode($response);
 
-	$output = file_get_contents('http://isbndb.com/api/v2/json/Q0DGGAQJ/books?q='.urlencode($contents).'');
-
-}else{
+	}else{
 ?>
 <!--Take the user input and store it into a session variable that gets sent to search.php-->
 		<h1>Find Book</h1> 
@@ -41,7 +42,7 @@ if (!empty($_POST)){
 		    <input type="submit" value="Search" /> 
 		</form> 
 <?php
-//echo $output;
+
 }
-echo $output;
+
 ?>
