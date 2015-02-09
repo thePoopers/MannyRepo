@@ -39,7 +39,7 @@ public class AddComment extends Activity implements OnClickListener{
     //put your local ip instead,  on windows, run CMD > ipconfig
     //or in mac's terminal type ifconfig and look for the ip under en0 or en1
     //private static final String POST_COMMENT_URL = "http://xxx.xxx.x.x:1234/webservice/addcomment.php";
-    private static final String POST_COMMENT_URL = "http://192.168.1.6/webservice/addcomment.php";
+    private static final String POST_COMMENT_URL = "http://192.168.1.7/webservice/addcomment.php";
     
     //testing on Emulator:
     //private static final String POST_COMMENT_URL = "http://10.0.2.2:1234/webservice/addcomment.php";
