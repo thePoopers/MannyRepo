@@ -36,7 +36,7 @@ public class ReadComments extends ListActivity {
 
 	// testing from a real server:
 	 //private static final String READ_COMMENTS_URL = "http://www.theartistandtheengineer.co/webservice/comments.php";
-    private static final String READ_COMMENTS_URL = "http://192.168.1.6/webservice/comments.php";
+    private static final String READ_COMMENTS_URL = "http://192.168.1.7/webservice/comments.php";
 
 	// JSON IDS:
 	private static final String TAG_SUCCESS = "success";
@@ -98,12 +98,14 @@ public class ReadComments extends ListActivity {
 		// when parsing JSON stuff, we should probably
 		// try to catch any exceptions:
 		try {
-
+            System.out.println("json!!!!!"+json);
 			// I know I said we would check if "Posts were Avail." (success==1)
 			// before we tried to read the individual posts, but I lied...
 			// mComments will tell us how many "posts" or comments are
 			// available
 			mComments = json.getJSONArray(TAG_POSTS);
+
+            System.out.println("MCOMMENTS!!!"+mComments);
 
 			// looping through all posts according to the json object returned
 			for (int i = 0; i < mComments.length(); i++) {

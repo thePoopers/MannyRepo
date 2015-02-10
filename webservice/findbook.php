@@ -1,4 +1,5 @@
 <?php
+//findbook.php
 //Start a session that carries a session variable
 session_start();
 //load and connect to MySQL database stuff
@@ -17,34 +18,44 @@ if (!empty($_POST)){
 	}
 
 	//if the page hasnt died, we call isbndb
-	session_start();
 
-	header('Content-Type: application/json');
+	//header('Content-Type: application/json');
 
 	//take input from textbox
 	$contents = $_POST["contents"];
 	//store json output from isbndb into output var
 	$output = file_get_contents('http://isbndb.com/api/v2/json/Q0DGGAQJ/books?q='.urlencode($contents).'');
+
+
+	echo $output;
+
 	//decode json into an object to make some logic out of results
-	$objJson = json_decode($output);
+	
+	//$objJson = json_decode($output);
 
 	//if there are any results
-	if($objJson->result_count > 0){
+/*	if($objJson->result_count > 0){
 		$response["success"] = 1;
 		$response["message"] = "Successfully searched!";
-		$response["begin"] = $output;
+		//$response["begin"] = $output;
+		//$response["begin"] = json_encode($output);
 		//echo $output;
 		echo json_encode($response);
-	}
+		echo $output;
+		
+		//echo json_encode($output);
+	}*/
 	//else no results
-	else{
+	/*else{
+		//maybe do a success = 0 here???
 		$response["success"] = 1;
 		$response["message"] = "No Results Found";
 		echo json_encode($response);
-	}
+	}*/
 
-	}
-	else{
+}
+
+else{
 ?>
 <!--Take the user input and store it into a session variable that gets sent to search.php-->
 		<h1>Find Book</h1> 

@@ -48,7 +48,7 @@ public class Login extends Activity implements OnClickListener {
 
 	// testing from a real server:
 	 //private static final String LOGIN_URL = "http://www.theartistandtheengineer.co/webservice/login.php";
-    private static final String LOGIN_URL = "http://192.168.1.6/webservice/login.php";
+    private static final String LOGIN_URL = "http://192.168.1.7/webservice/login.php";
 
 	// JSON element ids from repsonse of php script:
 	private static final String TAG_SUCCESS = "success";

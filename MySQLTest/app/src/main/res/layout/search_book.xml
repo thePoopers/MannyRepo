@@ -4,13 +4,7 @@
     android:layout_height="match_parent"
     >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/pegasus" />
+
 
     <TextView
         android:id="@+id/textView2"
@@ -27,7 +21,7 @@
 
 
     <EditText
-        android:id="@+id/searchBook"
+        android:id="@+id/bookData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -44,17 +38,17 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_toLeftOf="@+id/imageView1"
+        android:layout_below="@+id/textView2"
         android:text="Title Author ISBN " />
 
     <Button
-        android:id="@+id/bsubmit"
+        android:id="@+id/bSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:text="Submit" />
+        android:text="Search" />
 
 
 </RelativeLayout>
