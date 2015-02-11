@@ -31,21 +31,11 @@ public class SearchBook extends Activity implements OnClickListener{
     JSONParser jsonParser = new JSONParser();
 
     // Search page
-    private static final String SEARCH_BOOK_URL = "http://192.168.1.20/webservice/findbook.php";
+    private static final String SEARCH_BOOK_URL = "http://192.168.0.101/webservice/findbook.php";
+
 
     // ID's that get pulled from the JSON output
     private static final String TAG_RESULT_COUNT = "result_count";
-    private static final String TAG_TITLE = "title";
-    private static final String TAG_SUCCESS = "success";
-    private static final String TAG_BEGIN = "begin";
-    private static final String TAG_MESSAGE = "message";
-    private static final String TAG_INDEX_SEARCHED = "index_searched";
-    private static final String TAG_PAGE_COUNT = "page_count";
-    private static final String TAG_DATA = "data";
-    private static final String TAG_ISBN13 = "isbn13";
-    private static final String TAG_AUTHOR_DATA = "author_data";
-    private static final String TAG_AUTHOR_NAME = "name";
-    private static final String TAG_AUTHOR_ID = "id";
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
