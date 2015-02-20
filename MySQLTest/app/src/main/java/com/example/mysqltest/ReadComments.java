@@ -36,7 +36,7 @@ public class ReadComments extends ListActivity {
 
 	// testing from a real server:
 	 //private static final String READ_COMMENTS_URL = "http://www.theartistandtheengineer.co/webservice/comments.php";
-    private static final String READ_COMMENTS_URL = "http://192.168.1.7/webservice/comments.php";
+    private static final String READ_COMMENTS_URL = "http://192.168.1.204/webservice/comments.php";
 
 	// JSON IDS:
 	private static final String TAG_SUCCESS = "success";

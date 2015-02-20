@@ -37,7 +37,7 @@ ADDED from AndroidManifest.xml:12:5
 		ADDED from AndroidManifest.xml:14:9
 	android:theme
 		ADDED from AndroidManifest.xml:16:9
-activity#com.example.mysqltest.SearchBook
+activity#com.example.mysqltest.Login
 ADDED from AndroidManifest.xml:17:9
 	android:label
 		ADDED from AndroidManifest.xml:19:13
@@ -59,7 +59,7 @@ ADDED from AndroidManifest.xml:25:9
 		ADDED from AndroidManifest.xml:27:13
 	android:name
 		ADDED from AndroidManifest.xml:26:13
-activity#com.example.mysqltest.Login
+activity#com.example.mysqltest.ReadComments
 ADDED from AndroidManifest.xml:29:9
 	android:label
 		ADDED from AndroidManifest.xml:31:13

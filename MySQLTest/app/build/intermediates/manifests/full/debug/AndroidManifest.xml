@@ -16,7 +16,7 @@ kit
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.mysqltest.SearchBook"
+            android:name="com.example.mysqltest.Login"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +29,7 @@ kit
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.example.mysqltest.Login"
+            android:name="com.example.mysqltest.ReadComments"
             android:label="@string/app_name" >
         </activity>
         <activity

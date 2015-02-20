@@ -31,7 +31,7 @@ public class SearchBook extends Activity implements OnClickListener{
     JSONParser jsonParser = new JSONParser();
 
     // Search page
-    private static final String SEARCH_BOOK_URL = "http://192.168.0.101/webservice/findbook.php";
+    private static final String SEARCH_BOOK_URL = "http://192.168.1.204/webservice/findbook.php";
 
 
     // ID's that get pulled from the JSON output
